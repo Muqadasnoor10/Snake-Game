@@ -1,11 +1,11 @@
-**You want the snake to change its color dynamically based on the last eaten fruit. **
+**You want the snake to change its color dynamically based on the last eaten fruit.**
 Right now, the snake has a fixed green color. 
 We can modify the Snake class so that when it eats a fruit, it stores the fruit color and uses it to draw itself instead of the default green. 
 Letters will keep the default color.
 
 ---
 
-#Update the Snake class
+##  Update the Snake class
 
 Add a current_color attribute to store the snake’s color:
 class Snake:
@@ -26,7 +26,7 @@ class Snake:
         self.current_color = (0, 200, 0)  # reset color
 ---
 
-#Update draw method to use current_color
+## Update draw method to use current_color
 
     def draw(self, surface):
         if not self.positions:
@@ -55,7 +55,7 @@ class Snake:
         # Eyes and tongue code remains the same...
 ---
 
-#Update the Game.run() method to pass color when eating fruit
+## Update the Game.run() method to pass color when eating fruit
 if self.snake.get_head_position() == self.food.position:
     if self.food.type == "fruit" and self.food.fruit_info:
         color = self.food.fruit_info["color"]
@@ -66,8 +66,9 @@ if self.snake.get_head_position() == self.food.position:
     self.snake.grow(bonus=bonus, color=color)
     self.food.randomize_position(self.snake.positions)
 
-#✅ That’s it! Now:
+## ✅ That’s it! Now:
 
 -When the snake eats a fruit, it changes to that fruit's color.
 -Eating letters keeps it the default green.
 -The shading of the body segments adapts to the color.
+
