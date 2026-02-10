@@ -10,11 +10,13 @@ Letters will keep the default color.
 
 
 class Snake:
+   
     def __init__(self):
         self.reset()
         self.tongue_state = False
         self.tongue_timer = 0
         self.current_color = (0, 200, 0)  # default green
+   
     def reset(self):
         self.length = 3
         self.positions = [(GRID_WIDTH // 2, GRID_HEIGHT // 2)]
@@ -70,6 +72,7 @@ if self.snake.get_head_position() == self.food.position:
 - When the snake eats a fruit, it changes to that fruit's color.
 - Eating letters keeps it the default green.
 - The shading of the body segments adapts to the color.
+
 
 
 
