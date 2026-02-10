@@ -68,7 +68,8 @@ if self.snake.get_head_position() == self.food.position:
 
 ## ✅ That’s it! Now:
 
--When the snake eats a fruit, it changes to that fruit's color.
--Eating letters keeps it the default green.
--The shading of the body segments adapts to the color.
+- When the snake eats a fruit, it changes to that fruit's color.
+- Eating letters keeps it the default green.
+- The shading of the body segments adapts to the color.
+
 
