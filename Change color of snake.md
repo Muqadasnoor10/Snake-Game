@@ -6,8 +6,8 @@ Letters will keep the default color.
 ---
 
 ##  Update the Snake class
+- Add a current_color attribute to store the snake’s color:
 
-Add a current_color attribute to store the snake’s color:
 class Snake:
     def __init__(self):
         self.reset()
@@ -71,5 +71,6 @@ if self.snake.get_head_position() == self.food.position:
 - When the snake eats a fruit, it changes to that fruit's color.
 - Eating letters keeps it the default green.
 - The shading of the body segments adapts to the color.
+
 
 
